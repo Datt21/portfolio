@@ -1093,16 +1093,4 @@ img{
     .swiper-button-next{
         right: -3.5rem;
     }
-
-    .swiper-container-horizontal > .swiper-pagination-bullets{
-        bottom: -4rem;
-    }
-
-    .contact__form{
-        width: 460px;
-    }
-
-    .contact__inputs{
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
