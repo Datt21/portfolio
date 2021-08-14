@@ -380,7 +380,7 @@ img{
     width: 300px;
     justify-self: center;
     align-self: center;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -396,13 +396,13 @@ img{
 }
 
 .about__info-title{
-    font-size: var(--h1-font-size);
+    font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
 }
 
 .about__info-name{
-    font-size: var(--font-medium)
+    font-size: var(--smaller-font-size);
 }
 
 .about__info-title,
@@ -528,14 +528,10 @@ img{
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
 }
-
-.skills__close .skills__arrow{
-    transform: rotate(-180deg);
-}
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     margin-bottom: var(--mb-2);
 }
 
@@ -543,22 +539,15 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
-    /* margin-right: 2rem; */
 }
-
-
 
 .qualification__button:hover{
     color: var(--first-color);
 }
 
 .qualification__icon{
-    font-size: 1.8em;
+    font-size: 1.8rem;
     margin-right: var(--mb-0-25);
-}
-
-.qualification__button .first{
-    margin-right: var(--mb-3);
 }
 
 .qualification__data{
@@ -567,27 +556,21 @@ img{
     column-gap: 1.5rem;
 }
 
-.qualification__data .second{
-    margin-left: 50px;
-}
-
 .qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    margin-left: 3rem;
 }
 
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
-    margin-left: var(--mb-3);
 }
 
 .qualification__calendar{
     font-size: var(--smaller-font-size);
     color:var(--text-color-light);
-    margin-left: 3rem;
+
 }
 
 .qualification__rounder{
@@ -613,13 +596,18 @@ img{
 .qualification__active[data-content]{
     display: block;
 }
+/*==================== SERVICES ====================*/
+
+
+/* Active Modal */
+
 
 /*==================== PORTFOLIO ====================*/
 .filter-categories{
     /* text-align: center; */
     font-size: var(--font-medium);
     font-weight: 400;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     
 }
 
@@ -627,44 +615,24 @@ img{
     display: inline-block;
 } */
 
-.filter-categories .categories {
+.filter-categories ul.categories {
     /* padding: 20px; */
     display: flex;
     justify-content: center;
+   
 }
 
-.categories{
+.categories li{
     /* padding: 0 10px; */
+    color: #6e6d7a;
     cursor: pointer;
     padding: 10px 12px;
     border-radius: 8px;
-    color: var(--title-color);
 }
 
-.categories .active{
+.categories li.active{
     background: rgba(13,12,34,0.05);
     font-weight: var(--font-semi-bold);
-    color: var(--first-color);
-}
-
-.category{
-    padding: 10px 15px;
-    /* justify-content: center; */
-    border-radius: 5px;
-    display:flex;
-    margin: 0 10px;
-}
-
-.category .project__tagname{
-    height:18px;
-    padding-top: 5px;
-    font-size: 14px;
-}
-
-.category i{
-    /* color: var(--first-color); */
-    font-size : 2rem;
-    /* padding-top: 10px; */
 }
 
 .list-project {
@@ -685,7 +653,6 @@ img{
 
 .item-image{
     position: relative;
-    z-index: 0;
 }
 
 .item-icon{
@@ -694,44 +661,15 @@ img{
     bottom: 0px;
     display: flex;
     padding-right: 20px;
-    padding-bottom: 20px;
-    z-index: 1;
+    padding-bottom: 10px;
 }
 
 .item-icon .icon-github{
+    padding: 5px;
     margin-right: 5px;
-    padding: 3px 8px;
     background: #fff;
     color: #555;
-    border-radius: 3px;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.4s;
 }
-
-.item-icon .icon-web{
-    background: #fff;
-    margin-left: 10px;
-    padding: 3px 8px;
-    border-radius: 3px;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.4s;
-}
-
-.category .project__icon {
-    font-size: 2rem;
-    color: var(--first-color);
-    font-weight: 400;
-    display: inline-block;
-}
-
-.item-image:hover .icon-github,
-.item-image:hover .icon-web{
-    opacity: 1;
-    overflow: visible;
-}
-
 /* .portfolio__container{
     overflow: initial;
 }
@@ -791,6 +729,11 @@ img{
 .swiper-pagination-bullet{
     outline: none;
 } */
+/*==================== PROJECT IN MIND ====================*/
+
+
+/*==================== TESTIMONIAL ====================*/
+
 
 /*==================== CONTACT ME ====================*/
 .contact__container{

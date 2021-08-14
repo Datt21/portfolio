@@ -635,10 +635,10 @@ img{
 
 .categories{
     /* padding: 0 10px; */
+    color: #242329;
     cursor: pointer;
     padding: 10px 12px;
     border-radius: 8px;
-    color: var(--title-color);
 }
 
 .categories .active{

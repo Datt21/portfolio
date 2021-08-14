@@ -535,7 +535,7 @@ img{
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     margin-bottom: var(--mb-2);
 }
 
@@ -543,22 +543,15 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
-    /* margin-right: 2rem; */
 }
-
-
 
 .qualification__button:hover{
     color: var(--first-color);
 }
 
 .qualification__icon{
-    font-size: 1.8em;
+    font-size: 1.8rem;
     margin-right: var(--mb-0-25);
-}
-
-.qualification__button .first{
-    margin-right: var(--mb-3);
 }
 
 .qualification__data{
@@ -635,10 +628,10 @@ img{
 
 .categories{
     /* padding: 0 10px; */
+    color: #242329;
     cursor: pointer;
     padding: 10px 12px;
     border-radius: 8px;
-    color: var(--title-color);
 }
 
 .categories .active{

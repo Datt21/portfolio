@@ -635,16 +635,16 @@ img{
 
 .categories{
     /* padding: 0 10px; */
+    color: #242329;
     cursor: pointer;
     padding: 10px 12px;
     border-radius: 8px;
-    color: var(--title-color);
 }
 
 .categories .active{
     background: rgba(13,12,34,0.05);
     font-weight: var(--font-semi-bold);
-    color: var(--first-color);
+    color: var(--title-color)
 }
 
 .category{

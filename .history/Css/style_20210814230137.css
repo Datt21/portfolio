@@ -535,7 +535,7 @@ img{
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     margin-bottom: var(--mb-2);
 }
 
@@ -543,22 +543,15 @@ img{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
-    /* margin-right: 2rem; */
 }
-
-
 
 .qualification__button:hover{
     color: var(--first-color);
 }
 
 .qualification__icon{
-    font-size: 1.8em;
+    font-size: 1.8rem;
     margin-right: var(--mb-0-25);
-}
-
-.qualification__button .first{
-    margin-right: var(--mb-3);
 }
 
 .qualification__data{
@@ -567,27 +560,21 @@ img{
     column-gap: 1.5rem;
 }
 
-.qualification__data .second{
-    margin-left: 50px;
-}
-
 .qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    margin-left: 3rem;
 }
 
 .qualification__subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
-    margin-left: var(--mb-3);
 }
 
 .qualification__calendar{
     font-size: var(--smaller-font-size);
     color:var(--text-color-light);
-    margin-left: 3rem;
+
 }
 
 .qualification__rounder{
@@ -613,13 +600,18 @@ img{
 .qualification__active[data-content]{
     display: block;
 }
+/*==================== SERVICES ====================*/
+
+
+/* Active Modal */
+
 
 /*==================== PORTFOLIO ====================*/
 .filter-categories{
     /* text-align: center; */
     font-size: var(--font-medium);
     font-weight: 400;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     
 }
 
@@ -635,36 +627,21 @@ img{
 
 .categories{
     /* padding: 0 10px; */
+    color: #242329;
     cursor: pointer;
     padding: 10px 12px;
     border-radius: 8px;
-    color: var(--title-color);
 }
 
 .categories .active{
     background: rgba(13,12,34,0.05);
     font-weight: var(--font-semi-bold);
-    color: var(--first-color);
 }
 
 .category{
-    padding: 10px 15px;
-    /* justify-content: center; */
-    border-radius: 5px;
-    display:flex;
-    margin: 0 10px;
-}
-
-.category .project__tagname{
-    height:18px;
-    padding-top: 5px;
-    font-size: 14px;
-}
-
-.category i{
-    /* color: var(--first-color); */
-    font-size : 2rem;
-    /* padding-top: 10px; */
+    padding: 10px 20px;
+    justify-content: center;
+    border-radius: 3px
 }
 
 .list-project {

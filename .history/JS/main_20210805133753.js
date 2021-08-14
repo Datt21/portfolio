@@ -48,6 +48,31 @@ function toggleSkills(){
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
+
+/*==================== QUALIFICATION TABS ====================*/
+
+
+/*==================== SERVICES MODAL ====================*/
+
+
+/*==================== PORTFOLIO SWIPER  ====================*/
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // mousewheel: true,
+    // keyboard: true,
+  });
+/*==================== TESTIMONIAL ====================*/
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
