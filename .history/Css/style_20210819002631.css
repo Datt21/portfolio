@@ -651,6 +651,16 @@ img{
     text-align: center;
 }
 
+.category span{ 
+    padding-bottom: 5px;
+}
+
+.category .project__tagname{
+    height:18px;
+    padding-top: 3px;
+    padding-left: 3px;
+    font-size: 14px;
+}
 
 .category i{
     /* color: var(--first-color); */

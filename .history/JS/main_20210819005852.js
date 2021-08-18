@@ -135,23 +135,40 @@ themeButton.addEventListener('click', () =>{
 // }  
 
 const filter_button = document.querySelectorAll('.category')
-const item_ol = document.querySelectorAll('.item-ol')
-Array.from(filter_button).forEach(function(button) {
-    button.addEventListener('click', function(event) {
+
+Array.from(filter_button).forEach(function(element) {
+    element.addEventListener('click', function(event) {
         for(let i = 0; i < filter_button.length; i++) {
             filter_button[i].classList.remove('active');
         }
         this.classList.add('active');
-
-        let buttonAttr = event.target.dataset.filter;
-
-        Array.from(item_ol).forEach(function(ele){
-            let elementAttr = ele.dataset.item;
-            if(buttonAttr === elementAttr || buttonAttr === 'all') {
-                ele.style.display = 'block';
-            }else{
-                ele.style.display = 'none';
-            }
-        })
     })
+
+    let name_filter = element.dataset.filter;
+    console.log(name_filter);
 })
+//     document.getElementById(type).style.display = 'block';
+//     switch (type) {
+//         case 'all-item':
+//             document.getElementById('htmlcss-item').style.display = 'none';
+//             document.getElementById('js-item').style.display = 'none';
+//             document.getElementById('react').style.display= 'none';
+//             break;
+//         case 'htmlcss-item':
+//             document.getElementsById('all-item').style.display = 'none';
+//             document.getElementById('js-item').style.display = 'none';
+//             document.getElementById('react').style.display = 'none';    
+//             break;
+//         case 'js-item':
+//             document.getElementsById('all-item').style.display = 'none';
+//             document.ById('htmlcss-item').style.display = 'none';
+//             document.getElementById('react').style.display = 'none';    
+//             break;
+//         case 'react-item':
+//             document.getElementsById('all-item').style.display = 'none';
+//             document.getElementById('htmlcss-item').style.display = 'none';
+//             document.getElementById('js-item').style.display = 'none';    
+//             break;
+      
+//     }
+// }    

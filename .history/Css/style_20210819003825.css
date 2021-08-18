@@ -636,7 +636,7 @@ img{
     color: var(--title-color);
 }
 
-.categories .active{
+.categories.active{
     background: var(--input-color);
     font-weight: var(--font-semi-bold);
     color: var(--first-color);
@@ -651,6 +651,13 @@ img{
     text-align: center;
 }
 
+
+.category .project__tagname{
+    height:18px;
+    padding: 3px 0 0 3px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
 
 .category i{
     /* color: var(--first-color); */

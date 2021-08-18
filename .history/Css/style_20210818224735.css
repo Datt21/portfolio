@@ -645,12 +645,18 @@ img{
 
 .category{
     padding: 10px 15px;
+    /* justify-content: center; */
     border-radius: 5px;
     display:flex;
     margin: 0 10px;
-    text-align: center;
 }
 
+.category .project__tagname{
+    height:18px;
+    padding-top: 3px;
+    padding-left: 3px;
+    font-size: 14px;
+}
 
 .category i{
     /* color: var(--first-color); */
@@ -743,7 +749,8 @@ img{
 /* filter poject */
 
 #htmlcss-item, #js-item, #react-item {
-   display: none;
+    opacity: 0;
+    overflow: hidden;
 }
 
 /*==================== CONTACT ME ====================*/

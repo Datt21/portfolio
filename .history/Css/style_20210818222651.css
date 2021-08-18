@@ -645,12 +645,18 @@ img{
 
 .category{
     padding: 10px 15px;
+    /* justify-content: center; */
     border-radius: 5px;
     display:flex;
     margin: 0 10px;
-    text-align: center;
 }
 
+.category .project__tagname{
+    height:18px;
+    padding-top: 3px;
+    padding-left: 3px;
+    font-size: 14px;
+}
 
 .category i{
     /* color: var(--first-color); */
@@ -736,14 +742,8 @@ img{
 .icon-github:hover,
 .icon-web:hover {
     background-color: #ffffffb3;
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: all 0.3s;
-}
-
-/* filter poject */
-
-#htmlcss-item, #js-item, #react-item {
-   display: none;
 }
 
 /*==================== CONTACT ME ====================*/
@@ -793,6 +793,48 @@ img{
     outline: none;
 }
 
+/* .contact__input{
+    padding: 0 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 100%;
+    transition: .3s;
+    outline: none;
+    height: 60px;
+    background-color: var(--body-color)
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+.contact__input:focus{
+    border-color: #655af9;
+}
+
+.contact__content{
+    position: relative;
+    background-color: var(--body-color)
+    border-radius: 4px;
+}
+
+.contact__label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.contact__input:not(:placeholder-shown) + .contact__label,
+.contact__input:focus + .contact__label {
+    top: 0;
+    padding: 10px;
+    display: inline-block;
+    background-color: var(--body-color);
+    color: var(--first-color);
+} */
 
 /*==================== FOOTER ====================*/
 .footer{

@@ -137,7 +137,7 @@ themeButton.addEventListener('click', () =>{
 const filter_button = document.querySelectorAll('.category')
 const item_ol = document.querySelectorAll('.item-ol')
 Array.from(filter_button).forEach(function(button) {
-    button.addEventListener('click', function(event) {
+    element.addEventListener('click', function(event) {
         for(let i = 0; i < filter_button.length; i++) {
             filter_button[i].classList.remove('active');
         }

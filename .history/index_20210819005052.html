@@ -392,20 +392,23 @@
             <span class="section__subtitle">My Projects </span>
 
             <div class="filter-categories">
-                <div class="categories" id="filter_button">
-
-                    <a class="category active" data-filter="all">
-                        ALL
-                    </a>
-                    <a class="category" data-filter="htmlcss">
-                        HTML-CSS
-                    </a>
-                    <a class="category" data-filter="javascript">
-                        JAVASCRIPT
-                    </a>
-                    <a class="category" data-filter="react">
-                        REACTJS
-                    </a>
+                <div class="categories">
+                    <div class="category active" onclick="changeItem('all-item', this)">
+                        <!-- <i class='bx bx-grid-alt .project__icon' ></i> -->
+                        <span class="project__tagname">All</span>
+                    </div>
+                    <div class="category" onclick="changeItem('htmlcss-item', this)">
+                        <!-- <i class='bx bxl-html5 .project__icon' ></i> -->
+                        <span class="project__tagname">Html-Css</span>
+                    </div>
+                    <div class="category" onclick="changeItem('js-item', this)">
+                        <!-- <i class='bx bxl-javascript .project__icon'></i> -->
+                        <span class="project__tagname">Javascript</span>
+                    </div>
+                    <div class="category" onclick="changeItem('react-item', this)">
+                        <!-- <i class='bx bxl-react .project__icon' ></i> -->
+                        <span class="project__tagname">ReactJs</span>
+                    </div>
                 </div>
 
             </div>
@@ -517,7 +520,7 @@
 
                 <div class="item-ol" data-item="react">
                     <a href="" class="item-image">
-                       <img src="./images/todolist.jpg" alt="">
+                       <img src="./images/otp.png" alt="">
                        <div class="item-icon">
                            <div class="icon-github"><i class="uil uil-github"></i></div>
                            <div class="icon-web"><i class="uil uil-globe"></i></div>

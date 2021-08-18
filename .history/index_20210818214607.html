@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--============= ICONS ================  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ============= SWIPER CSS =============== -->
+    <link rel="stylesheet" href="./Css/swiper-bundle.min.css">
+
     <!-- =============== CSS ========================= -->
     <link rel="stylesheet" href="./Css/style.css">
 
@@ -392,26 +396,29 @@
             <span class="section__subtitle">My Projects </span>
 
             <div class="filter-categories">
-                <div class="categories" id="filter_button">
-
-                    <a class="category active" data-filter="all">
-                        ALL
-                    </a>
-                    <a class="category" data-filter="htmlcss">
-                        HTML-CSS
-                    </a>
-                    <a class="category" data-filter="javascript">
-                        JAVASCRIPT
-                    </a>
-                    <a class="category" data-filter="react">
-                        REACTJS
-                    </a>
+                <div class="categories">
+                    <div class="category active">
+                        <!-- <i class='bx bx-grid-alt .project__icon' ></i> -->
+                        <span class="project__tagname">All</span>
+                    </div>
+                    <div class="category ">
+                        <!-- <i class='bx bxl-html5 .project__icon' ></i> -->
+                        <span class="project__tagname">Html-Css</span>
+                    </div>
+                    <div class="category">
+                        <!-- <i class='bx bxl-javascript .project__icon'></i> -->
+                        <span class="project__tagname">Javascript</span>
+                    </div>
+                    <div class="category">
+                        <!-- <i class='bx bxl-react .project__icon' ></i> -->
+                        <span class="project__tagname">ReactJs</span>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="list-project container grid" id="all-item">
-                <div class="item-ol" data-item="javascript">
+            <div class="list-project container grid">
+                <div class="item-ol">
                     <a href="" class="item-image">
                        <img src="./images/postfolio.png" alt="">
                        <div class="item-icon">
@@ -420,13 +427,13 @@
                        </div>
                     </a>
                     <div class="item-info">
-                        <div class="info-name">My Postfolio</div>  
+                        <div class="info-name">My Postfolio</div>
+                       
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="htmlcss">
+                <div class="item-ol">
                     <a href="" class="item-image">
-                       <img src="./images/dashboard.jpg" alt="">
+                       <img src="./images/288d5e727f76d94859b98875c7ff8d87.webp" alt="">
                        <div class="item-icon">
                         <div class="icon-github"><i class="uil uil-github"></i></div>
                         <div class="icon-web"><i class="uil uil-globe"></i></div>
@@ -436,10 +443,9 @@
                         <div class="info-name">Dashboard</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="htmlcss">
+                <div class="item-ol">
                     <a href="" class="item-image">
-                       <img src="./images/bnb.jpg" alt="">
+                       <img src="./images/6faf6e4bf20f375c458fd0ae30e41f67.webp" alt="">
                        <div class="item-icon">
                            <div class="icon-github"><i class="uil uil-github"></i></div>
                            <div class="icon-web"><i class="uil uil-globe"></i></div>
@@ -449,10 +455,9 @@
                         <div class="info-name">Airbnb Clone</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="javascript">
+                <div class="item-ol">
                     <a href="" class="item-image">
-                       <img src="./images/weatherApp.jpg" alt="">
+                       <img src="./images/77c717ed14b74e7ce22292cb698bad55.webp" alt="">
                        <div class="item-icon">
                          <div class="icon-github"><i class="uil uil-github"></i></div>
                          <div class="icon-web"><i class="uil uil-globe"></i></div>
@@ -462,10 +467,9 @@
                         <div class="info-name">Weather App</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="javascript">
-                    <a href="" class="item-image" ">
-                       <img src="./images/MusicApp.jpg" alt="">
+                <div class="item-ol">
+                    <a href="" class="item-image">
+                       <img src="./images/cenima.webp" alt="">
                        <div class="item-icon">
                         <div class="icon-github"><i class="uil uil-github"></i></div>
                         <div class="icon-web"><i class="uil uil-globe"></i></div>
@@ -475,10 +479,9 @@
                         <div class="info-name">Music App</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="javascript">
+                <div class="item-ol">
                     <a href="" class="item-image">
-                       <img src="./images/cenima.jpg" alt="">
+                       <img src="./images/otp.png" alt="">
                        <div class="item-icon">
                            <div class="icon-github"><i class="uil uil-github"></i></div>
                            <div class="icon-web"><i class="uil uil-globe"></i></div>
@@ -488,8 +491,7 @@
                         <div class="info-name">Film App</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="javascript">
+                <div class="item-ol">
                     <a href="" class="item-image">
                        <img src="./images/otp.png" alt="">
                        <div class="item-icon">
@@ -498,46 +500,31 @@
                        </div>
                     </a>
                     <div class="item-info">
-                        <div class="info-name">OTP Authentication</div>
+                        <div class="info-name">My Postfolio</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="javascript">
+                <div class="item-ol">
                     <a href="" class="item-image">
-                       <img src="./images/Datbike.jpg" alt="">
+                       <img src="./images/otp.png" alt="">
                        <div class="item-icon">
                            <div class="icon-github"><i class="uil uil-github"></i></div>
                            <div class="icon-web"><i class="uil uil-globe"></i></div>
                        </div>
                     </a>
                     <div class="item-info">
-                        <div class="info-name">DatBike Web</div>
+                        <div class="info-name">My Postfolio</div>
                     </div>
                 </div>
-
-                <div class="item-ol" data-item="react">
+                <div class="item-ol">
                     <a href="" class="item-image">
-                       <img src="./images/todolist.jpg" alt="">
+                       <img src="./images/otp.png" alt="">
                        <div class="item-icon">
                            <div class="icon-github"><i class="uil uil-github"></i></div>
                            <div class="icon-web"><i class="uil uil-globe"></i></div>
                        </div>
                     </a>
                     <div class="item-info">
-                        <div class="info-name">TodoList App</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="react">
-                    <a href="" class="item-image">
-                       <img src="./images/commerce.jpg" alt="">
-                       <div class="item-icon">
-                           <div class="icon-github"><i class="uil uil-github"></i></div>
-                           <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">Commerce Web</div>
+                        <div class="info-name">My Postfolio</div>
                     </div>
                 </div>
             </div>

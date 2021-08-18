@@ -119,39 +119,46 @@ themeButton.addEventListener('click', () =>{
 })
 
 /*-- ====== Filter Project========= --*/
-// function changeItem(type, element) {
-//     let tabs = document.getElementsByClassName('category');
-//     let loop = tabs.length;
-//     for (let i = 0; i < loop; i++){
-//         tabs[i].style.background = 'transparent';
-//         tabs[i].style.color = '#6d6a7c';
-//         tabs[i].style.fontWeight = '500';
+function changeItem(type, element) {
+    let tabs = document.getElementsByClassName('category');
+    let all = document.getElementsById('all-item');
+    let htcs = document.getElementById('htmlcss-item');
+    let js = document.getElementById('js-item');
+    let react = document.getElementById('react');
+    let loop = tabs.length;
+    for (let i = 0; i < loop; i++){
+        tabs[i].style.background = 'transparent';
+        tabs[i].style.color = '#6d6a7c';
+        tabs[i].style.fontWeight = '500';
         
-//     }
+    }
     
-//     element.style.background = '#f0eefc'; 
-//     element.style.color = '#6e57e0';
-//     element.style.fontWeight = '700';
-// }  
-
-const filter_button = document.querySelectorAll('.category')
-const item_ol = document.querySelectorAll('.item-ol')
-Array.from(filter_button).forEach(function(button) {
-    button.addEventListener('click', function(event) {
-        for(let i = 0; i < filter_button.length; i++) {
-            filter_button[i].classList.remove('active');
-        }
-        this.classList.add('active');
-
-        let buttonAttr = event.target.dataset.filter;
-
-        Array.from(item_ol).forEach(function(ele){
-            let elementAttr = ele.dataset.item;
-            if(buttonAttr === elementAttr || buttonAttr === 'all') {
-                ele.style.display = 'block';
-            }else{
-                ele.style.display = 'none';
-            }
-        })
-    })
-})
+    element.style.background = '#f0eefc'; 
+    element.style.color = '#6e57e0';
+    element.style.fontWeight = '700';
+    
+    document.getElementById(type).style.display = 'block';
+    switch (type) {
+        case 'all-item':
+            htcs.style.display = 'none';
+            js.style.display = 'none';
+            react.style.display= 'none';
+            break;
+        case 'htmlcss-item':
+            all.style.display = 'none';
+            js.style.display = 'none';
+            react.style.display = 'none';    
+            break;
+        case 'js-item':
+            all.style.display = 'none';
+            htcs.style.display = 'none';
+            react.style.display = 'none';    
+            break;
+        case 'react-item':
+            all.style.display = 'none';
+            htcs.style.display = 'none';
+            js.style.display = 'none';    
+            break;
+      
+    }
+}    
