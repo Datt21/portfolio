@@ -118,7 +118,6 @@ themeButton.addEventListener('click', () =>{
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-//filter projects type
 const filter_button = document.querySelectorAll('.category')
 const item_ol = document.querySelectorAll('.item-ol')
 Array.from(filter_button).forEach(function(button) {

@@ -496,11 +496,11 @@ img {
 }
 
 .skills__react {
-    width: 40%;
+    width: 30%;
 }
 
 .skills__figma {
-    width: 30%;
+    width: 40%;
 }
 
 .skills__photoshop {
@@ -548,7 +548,7 @@ img {
 }
 
 .qualification__button .first {
-    margin-right: var(--mb-0-5);
+    margin-right: var(--mb-3);
 }
 
 .qualification__data {
