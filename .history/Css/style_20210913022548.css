@@ -11,7 +11,6 @@
     --first-color-second: #6e57e0;
     --first-color-alt: #5a43cb;
     --first-color-lighter: #c1b6fc;
-    --first-color-box: #f2f1f370;
     --title-color: #242329;
     --text-color: #6d6a7c;
     --text-color-light: #a19fad;
@@ -74,7 +73,6 @@ body.dark-theme {
     --container-color: #211d35;
     --scroll-bar-color: #716c89;
     --scroll-thumb-color: #545167;
-    --first-color-box: #fafafa13;
 }
 /*====================== Button Dark/Light  ===================  */
 .nav__btns {
@@ -433,11 +431,11 @@ img {
 
 .skills__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 }
 
 .skills__data {
-    background-color: var(--first-color-box);
+    background-color: #f0eefc;
     border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
@@ -463,7 +461,7 @@ img {
 }
 
 .skills__icons {
-    font-size: 50px;
+    font-size: 60px;
     color: var(--first-color);
 }
 

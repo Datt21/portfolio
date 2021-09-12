@@ -74,7 +74,7 @@ body.dark-theme {
     --container-color: #211d35;
     --scroll-bar-color: #716c89;
     --scroll-thumb-color: #545167;
-    --first-color-box: #fafafa13;
+    --first-color-box: #f2f1f352;
 }
 /*====================== Button Dark/Light  ===================  */
 .nav__btns {

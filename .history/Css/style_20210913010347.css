@@ -11,7 +11,6 @@
     --first-color-second: #6e57e0;
     --first-color-alt: #5a43cb;
     --first-color-lighter: #c1b6fc;
-    --first-color-box: #f2f1f370;
     --title-color: #242329;
     --text-color: #6d6a7c;
     --text-color-light: #a19fad;
@@ -74,7 +73,6 @@ body.dark-theme {
     --container-color: #211d35;
     --scroll-bar-color: #716c89;
     --scroll-thumb-color: #545167;
-    --first-color-box: #fafafa13;
 }
 /*====================== Button Dark/Light  ===================  */
 .nav__btns {
@@ -417,11 +415,6 @@ img {
 /*==================== SKILLS ====================*/
 .skills__container {
     row-gap: 0;
-    column-gap: 40px;
-}
-
-.skills__content {
-    margin-bottom: var(--mb-1);
 }
 
 .skills__header {
@@ -431,39 +424,13 @@ img {
     cursor: pointer;
 }
 
-.skills__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-}
-
-.skills__data {
-    background-color: var(--first-color-box);
-    border-radius: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    /* box-shadow: 0 -1px 4px rgb(0, 0, 0, 0.2); */
-    box-shadow: 0 5px 8px rgb(0 0 0 / 0.15);
-    transition: 0.4s all;
-}
-
-.skills__data:hover {
-    transform: scale(1.1);
-}
-
-.skills__icon,
 .skills__arrow {
     font-size: 2rem;
     color: var(--first-color);
 }
 
 .skills__icon {
-    margin-right: 13px;
-}
-
-.skills__icons {
-    font-size: 50px;
+    font-size: 40px;
     color: var(--first-color);
 }
 
@@ -484,16 +451,12 @@ img {
 .skills__list {
     row-gap: 1.5rem;
     padding-left: 2.7rem;
-    padding-right: 2.7rem;
 }
 
 .skills__titles {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    column-gap: var(--mb-0-5);
-    padding: 1.5rem 0 1.5rem 0;
+    margin-bottom: var(--mb-0-5);
 }
 
 .skills__name {
