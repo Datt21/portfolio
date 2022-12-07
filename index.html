@@ -1,650 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--============= ICONS ================  -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css"
+    />
+    <link
+      href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.17/leaflet-maplibre-gl.js"></script>
     <!-- =============== CSS ========================= -->
-    <link rel="stylesheet" href="./Css/style.css">
+
+    <link rel="stylesheet" href="./Css/style.css" />
 
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--============================ HEADER ============================ -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Datpt</a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Special Day</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i>About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i>Skills
-                        </a>
-                    </li>
-                
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i>Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contact 
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#aboutus" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>AboutUs
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#outstory" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Out Stoty
+              </a>
+            </li>
 
-            <div class="nav__btns">
-                <!-- theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            <li class="nav__item">
+              <a href="#timeline" class="nav__link">
+                <i class="uil uil-calendar-alt nav__icon"></i>Timeline
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#albums" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Albums
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
-     <!--==================== MAIN ====================-->
-     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.facebook.com/profile.php?id=100043830603950" target="_blank" class="home__social-icon">
-                            <i class="uil uil-facebook"></i>
-                        </a>
-                        <a href="https://t.me/datpt21" target="_blank" class="home__social-icon">
-                            <i class="uil uil-telegram-alt"></i>
-                        </a>
-                        <a href="https://github.com/Datt21" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="d-flex banner">
+          <div class="banner1">
+            <img src="./images/banner1.jpg" alt="" class="img" />
+          </div>
+          <div class="banner-title">
+            <span>Save The Date</span>
+          </div>
+          <div class="d-flex banner-info">
+            <div class="name">Phạm Quang & Lê Thuý</div>
+          </div>
 
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+          <div class="home_scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="layout-banner d-flex">
+          <div class="img-left">
+            <img src="./images/banner5.jpg" alt="" class="img-1" />
+            <div class="text-special">Special</div>
+            <div class="text-day">day</div>
+          </div>
+          <div class="img-right">
+            <img src="./images/banner3.jpg" alt="" class="img-2" />
+            <div class="text-us text-special">with Us</div>
+            <img
+              src="./images/wedding-bouquet.svg"
+              alt=""
+              class="bouquet text-icon"
+            />
+          </div>
+        </div>
+        <div></div>
+        <div class="banner-6">
+          <img src="./images/banner6.jpg" alt="" class="img-6" />
+        </div>
+      </section>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="aboutus">
+        <h2 class="section__title">About Us</h2>
+        <span class="section__subtitle">We introduction</span>
+        <div class="card-profile">
+          <img src="./images/profile_3.jpg"" alt="" class="img-profile">
+          <!-- <span class="">Name: Minh Quang</span> -->
+          <div class="card-info">
+            <div class="card-name">Name: Phạm Quang</div>
+            <div class="card-name">Profession: Doctor</div>
+          </div>
+        </div>
 
-                                <image class="home_blob-img" x='20' y='15 'xlink:href="./images/img-me.png"/>
-                            </g>
-                        </svg>
-                        
-                    </div>
+        <div class="card-profile">
+          <img src="./images/profile_2.jpg"" alt="" class="img-profile">
+          <!-- <span class="">Name: Minh Quang</span> -->
+          <div class="card-info">
+            <div class="card-name">Name: Lê Thúy</div>
+            <div class="card-name">Profession: Banker</div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="outstory">
+        <h2 class="section__title">Out Story</h2>
+        <span class="section__subtitle">Roadmap for love</span>
+      </section>
+      <div class="slider_content">
+        <div class="card">
+          <input type="radio" name="select" id="slide_1" checked />
+          <input type="radio" name="select" id="slide_2" />
+          <input type="radio" name="select" id="slide_3" />
+          <input type="radio" name="select" id="slide_4" />
+          <input type="checkbox" id="slideImg" />
 
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'am <span>Dat</span> </h1>
-                        <h3 class="home_subtitle">Frontend Developer</h3>
-                        <p class="home_description">If you want to be a programmer, create and maintain a project on Github. Anything you point out has to start with hard work, persistence and shouting "Hey, I'm passionate about this!" are all effective.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me<i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
+          <div class="slider">
+            <label for="slide_1" class="slide slide_1"></label>
+            <label for="slide_2" class="slide slide_2"></label>
+            <label for="slide_3" class="slide slide_3"></label>
+            <label for="slide_4" class="slide slide_4"></label>
+          </div>
+          <!-- img1 -->
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_1" src="./images/slide2.jpg" />
+              <div class="content content_1">
+                <div class="title">May 2021</div>
+                <div class="text">
+                  Biết đến nhau một cách tình cờ, nhưng tình cờ hơn khi có em
+                  trai Phạm Vũ Đăng Minh đã ông tơ bà nguyệt cho anh chị hihi.
                 </div>
-
-                <div class="home_scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
+              </div>
+            </label>
+          </div>
+          <!-- img2 -->
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_2" src="./images/kiss.jpg" />
+              <div class="content content_2">
+                <div class="title">First Date</div>
+                <div class="text">
+                  Lần đầu hẹn hò là không hẹn hò, chúng tôi bỏ lỡ nó, do covid,
+                  do vướng bận công việc của 2 đứa, những mọi thứ vẫn tiếp diễn.
+                  Rồi sau này với chúng tôi lần nào gặp nhau cũng là lần đầu.
                 </div>
+              </div>
+            </label>
+          </div>
+          <!-- img3 -->
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_3" src="./images/slide4.jpg" />
+              <div class="content content_3">
+                <div class="title">Rain Bow</div>
+                <div class="text">
+                  Có những ngày nắng rồi có những ngày mưa,tưởng chừng hai đứa
+                  phải nghe tiếng lặng thinh, nhưng có lẽ cuộc đời đang khẽ thở,
+                  rồi sau tất cả những cuồng điên rực rỡ ấy, ta về nhà khép cửa
+                  chờ nhau.
+                </div>
+              </div>
+            </label>
+          </div>
+          <!-- img4 -->
+          <div class="inner_part">
+            <label for="slideImg" class="img">
+              <img class="img_4" src="./images/banner4.jpg" />
+              <div class="content content_4">
+                <div class="title">18 December 2022</div>
+                <div class="text">
+                  Sau cùng hai đứa quyết định sau này gió tuyết cùng nhau, bình
+                  đạm hay thanh bần cùng nhau, vinh hoa cùng nhau, dịu dàng ấm
+                  áp cũng cùng nhau, và vẫn luôn hướng cùng hướng.
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Timeline -->
+      <div class="section" id="timeline">
+        <h2 class="section__title">Timeline</h2>
+        <span class="section__subtitle">Kế hoạch hôn lễ</span>
+
+        <div class="wrapper">
+          <div class="center-line"></div>
+          <div class="row row-1 animation_1">
+            <div class="row-div">
+              <img
+                src="./images/wedding-bouquet.svg"
+                alt=""
+                class="icon bouquet"
+              />
+              <div class="details">
+                <div class="details_title">Lễ Nạp Tài</div>
+                <div class="details_date">09:00 17 Dec 2022</div>
+                <div class="details_adress">Thôn Trung Sơn, Xã Thanh Sơn</div>
+              </div>
             </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About me</h2>
-            <span class="section__subtitle">My introduction</span>
-
-            <div class="about__container container grid">
-                <img src="./images/me.jpg" alt="" class="about__img">
-
-                <div class="about-data">
-                    <p class="about-decription">Hi ! I'm Le Tien Dat, I learned in Electronics and Communications, but I interested in programming.
-                        Present, I am looking for an opportunity to work in an environment professional when I put down my computer I believe that with effort, 
-                        hard work and perseverance I can create quality products to contribute to the company as well as accumulate knowledge for yourself.
-                    </p>
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">06+</span>
-                            <span class="about__info-name">Month <br> experience</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">05+</span>
-                            <span class="about__info-name">Completed <br> project</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">01</span>
-                            <span class="about__info-name">Freelance <br> worked</span>
-                        </div>
-                    </div>   
-                    
-                    <div class="about__buttons">
-                        <a download="" href="./pdf/LeTienDat_CVE.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
+          </div>
+          <div class="row row-2 animation_2">
+            <div class="row-div">
+              <img src="./images/car.svg" alt="" class="icon bouquet" />
+              <div class="details">
+                <div class="details_title">Giờ Đón Dâu</div>
+                <div class="details_date">09:00 18 Dec 2022</div>
+                <div class="details_adress">TDP Hồ Trung, Phường Tân Dân</div>
+              </div>
             </div>
-
-    
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical</span>
-
-            <div class="skills__container container grid">
-                <div>
-                    <!-- skill 1 -->
-                    <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Frontend Devoloper</h1>
-                                <span class="skills__subtitle">More than 6 months</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <i class='bx bxl-html5  skills__icons'></i>
-                                    <h3 class="skills__name">Html</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                               
-                                    <i class='bx bxl-css3 skills__icons'></i>                                  
-                                    <h3 class="skills__name">Css</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                               
-                                    <i class='bx bxl-sass skills__icons'></i>                                
-                                    <h3 class="skills__name">Sass</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                               
-                                    <i class='bx bxl-javascript skills__icons' ></i>                                
-                                    <h3 class="skills__name">Javascript</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                                 
-                                    <i class='bx bxl-react skills__icons' ></i>                                
-                                    <h3 class="skills__name">React JS</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- skill 2 -->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-swatchbook skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Designer And Tools</h1>
-                                <span class="skills__subtitle">More than 2 months</span>
-                            </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <i class='bx bxl-figma skills__icons'></i>
-                                    <h3 class="skills__name">Figma</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <i class='bx bxs-photo-album skills__icons' ></i>
-                                    <h3 class="skills__name">Photoshop</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                               
-                                    <i class='bx bxl-git skills__icons' ></i>                             
-                                    <h3 class="skills__name">Git & Github</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                                 
-                                    <i class='bx bxl-firebase skills__icons' ></i>                               
-                                    <h3 class="skills__name">Firebase</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">                                 
-                                    <i class='bx bxs-file-json skills__icons' ></i>                               
-                                    <h3 class="skills__name">Postman</h3>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+          </div>
+          <div class="row row-1 animation_3">
+            <div class="row-div">
+              <img src="./images/couple.svg" alt="" class="icon bouquet" />
+              <div class="details">
+                <div class="details_title">Lễ Thành Hôn</div>
+                <div class="details_date">11:00 18 Dec 2022</div>
+                <div class="details_adress">
+                  Nhà Văn Hóa Đa Năng Phường Tân Dân
                 </div>
+              </div>
             </div>
-          
-
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex">
-                        <i class="uil uil-graduation-cap qualification__icon first "></i>  
-                        Education
-                    </div>
-
+          </div>
+          <div class="row row-2 animation_4">
+            <div class="row-div">
+              <img
+                src="./images/wedding-cheers.svg"
+                alt=""
+                class="icon bouquet"
+              />
+              <div class="details">
+                <div class="details_title">Tiệc Thành Hôn</div>
+                <div class="details_date">11:30 18 Dec 2022</div>
+                <div class="details_adress">
+                  Nhà Văn Hóa Đa Năng Phường Tân Dân
                 </div>
-                <div class="qualification__section" >
-                    <!-- Qualification content 1 -->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!-- Qualification 1 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title"> Engineer</h3>
-                                <span class="qualification__subtitle">PTIT-HN  </span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2016-2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="qualification__rounder"></div>
-                                <div class="qualification__line"></div>
-                            </div>
-                        </div>
-
-                        <!-- Qualification 2 -->
-                        <div class="qualification__data ">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title"> Web Development</h3>
-                                <span class="qualification__subtitle">BK Software</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    10-2020
-                                </div>
-                            </div>
-
-                          
-                        </div>
-
-                        <!-- Qualification 3 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title"> Web - ReactJS</h3>
-                                <span class="qualification__subtitle">T3H - Institute</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    04-2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!-- Qualification 4 -->
-                        <div class="qualification__data">
-                            <div></div>
-                            
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>                  
-
-                            <div>
-                                <h3 class="qualification__title">Freelancer</h3>
-                                <span class="qualification__subtitle">BK Software</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                     <!-- Qualification content 2 -->
-                     <div class="qualification__content" data-content id="work">
-                        <!-- Qualification 1 -->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Ui/Ux </h3>
-                                <span class="qualification__subtitle">Evon - Institute</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021-Present
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="qualification__rounder"></div>
-                                <!-- <div class="qualification__line"></div> -->
-                            </div>
-                        </div>
-
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-
-
-        </section>
-    
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">My Projects </span>
-
-            <div class="filter-categories">
-                <div class="categories" id="filter_button">
-
-                    <a class="category active" data-filter="all">
-                        ALL
-                    </a>
-                    <a class="category" data-filter="htmlcss">
-                        HTML-CSS
-                    </a>
-                    <a class="category" data-filter="javascript">
-                        JAVASCRIPT
-                    </a>
-                    <a class="category" data-filter="react">
-                        REACTJS
-                    </a>
-                </div>
-
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="countdown">
+          <img
+            src="./images/background.png"
+            alt=""
+            class="background-countdown"
+          />
+          <div class="countdown-content">
+            <h2>Wedding <span>coming </span> soon</h2>
+            <div class="lauch-time">
+              <div>
+                <p id="days">00</p>
+                <span>Days</span>
+              </div>
+              <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+              </div>
+              <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+              </div>
+              <div>
+                <p id="seconds">00</p>
+                <span>seconds</span>
+              </div>
             </div>
-
-            <div class="list-project container grid" id="all-item">
-                <div class="item-ol" data-item="htmlcss">
-                    <a href="" class="item-image">
-                       <img src="./images/postfolio.png" alt="">
-                       <div class="item-icon">
-                           <div class="icon-github"><i class="uil uil-github"></i></div>
-                           <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">My Postfolio</div>  
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="htmlcss">
-                    <a href="https://p-dashboard-convert.netlify.app" class="item-image">
-                       <img src="./images/dashboard.jpg" alt="">
-                       <div class="item-icon">
-                        <div class="icon-github">
-
-                            <a href="" class="item-link">
-                                <i class="uil uil-github">
-                                    <!-- <a href="https://github.com/Datt21/dashboard-fe-project"></a> -->
-                                </i>
-                            </a>
-                                
-                        </div>
-                        <div class="icon-web"> 
-                            <a href="" class="item-link">
-                                <i class="uil uil-globe">
-                                    <!-- <a href="https://p-dashboard-convert.netlify.app/"></a> -->
-                                </i>
-                            </a>
-                               
-                        </div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">Dashboard</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="javascript">
-                    <a href="https://app-simulation-authentication.netlify.app" class="item-image">
-                       <img src="./images/preview.jpg" alt="">
-                       <div class="item-icon">
-                           <div class="icon-github"><i class="uil uil-github"></i></div>
-                           <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">OTP Simulation</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="javascript">
-                    <a href="https://datt21.github.io/weather-app-js/" class="item-image">
-                       <img src="./images/weatherApp.jpg" alt="">
-                       <div class="item-icon">
-                         <div class="icon-github"><i class="uil uil-github"></i></div>
-                         <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">Weather App</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="javascript">
-                    <a href="https://p-music-webapp.netlify.app/" class="item-image">
-                       <img src="./images/MusicApp.jpg" alt="">
-                       <div class="item-icon">
-                        <div class="icon-github"><i class="uil uil-github"></i></div>
-                        <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">Music App</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="htmlcss">
-                    <a href="https://p-dabikeweb-commerce.netlify.app" class="item-image">
-                       <img src="./images/Datbike.jpg" alt="">
-                       <div class="item-icon">
-                           <div class="icon-github"><i class="uil uil-github"></i></div>
-                           <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">DatBike Web</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="react">
-                    <a href="https://todo-appfinal-react.netlify.app/" class="item-image">
-                       <img src="./images/todolist.jpg" alt="">
-                       <div class="item-icon">
-                           <div class="icon-github"><i class="uil uil-github"></i></div>
-                           <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">Todo App</div>
-                    </div>
-                </div>
-
-                <div class="item-ol" data-item="react">
-                    <a href="https://p-personal-movieapp.netlify.app" class="item-image">
-                       <img src="./images/cenima.jpg" alt="">
-                       <div class="item-icon">
-                           <div class="icon-github"><i class="uil uil-github"></i></div>
-                           <div class="icon-web"><i class="uil uil-globe"></i></div>
-                       </div>
-                    </a>
-                    <div class="item-info">
-                        <div class="info-name">Movie App</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact me</h2>
-                <span class="section__subtitle">Get in touch</span>
-
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Call Me</h3>
-                                <span class="contact__subtitle">0964986984</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">datptit16@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-
-                            <div>
-                                <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle"> 55 Chinh Kinh Street,Thanh Xuan District, Ha Noi </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form action="" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="name" class="contact__label">Name</label>
-                                <input type="text" class="contact__input" placeholder=" ">
-                            </div>
-
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input" placeholder=" ">
-                            </div>
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label message">Message</label>
-                            <textarea name="" id="" cols="" rows="7" class="contact__input message" placeholder=" "></textarea>
-                        </div>
-
-                        <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
-
-        </section>
+          </div>
+          <img src="./images/rocket.png" alt="" class="rocket" />
+        </div>
+      </div>
+      <div class="section" id="albums">
+        <h2 class="section__title">Albums</h2>
+        <span class="section__subtitle">Gửi tới tương lai</span>
+        <span class="section__subtitle"></span>
+        <div class="layout2">
+          <div class="layout-item">
+            <img src="./images/item1.jpg" alt="" class="layout-image" />
+          </div>
+          <div class="layout-item">
+            <img src="./images/item2.jpg" alt="" class="layout-image" />
+          </div>
+          <div class="layout-item">
+            <img src="./images/item11.jpg" alt="" class="layout-image" />
+          </div>
+          <div class="layout-item">
+            <img src="./images/item6.jpg" alt="" class="layout-image" />
+          </div>
+          <div class="layout-item">
+            <img src="./images/item4.jpg" alt="" class="layout-image" />
+          </div>
+          <div class="layout-item">
+            <img src="./images/item3.jpg" alt="" class="layout-image" />
+          </div>
+        </div>
+        <div class="layout-item-2">
+          <div>
+            <img
+              src="./images/item8.jpg"
+              alt=""
+              class="layout-image-2 animation_img"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/item12.jpg"
+              alt=""
+              class="layout-image-2 animation_img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section map" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <span class="section__subtitle">Thông tin liên hệ</span>
+        <div class="img-contact">
+          <img src="./images/banner6.jpg" alt="" class="contact-image" />
+        </div>
+        <div class="title_address">Nhà Văn Hóa Đa Năng Phường Tân Dân</div>
+        <div class="title_mail">Datptit16@gmail.com</div>
+        <div>
+          <a href="tel:0988597838" class="text-phone"> 0988597838 </a>
+        </div>
+        <button class="btn-address">Địa điểm</button>
+      </div>
+      <div class="section">
+        <div class="position-map">
+          <div id="map"></div>
+        </div>
+      </div>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Tien Dat</h1>
-                    <span class="footer__subtitle">Frontend Developer</span>
-                </div>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">Contactme</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://www.facebook.com/profile.php?id=100043830603950" target="_blank" class="footer__social">
-                        <i class="uil uil-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/dattpt.21/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://t.me/datpt21" target="_blank" class="footer__social">
-                        <i class="uil uil-telegram-alt"></i>
-                    </a>
-                </div>
-            </div>
-
-            <p class="footer__copy">&#169; Tien Dat. All right reserved</p>
-        </div>
-    </footer>
-    
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scroll-icon"></i>
+      <i class="uil uil-arrow-up scroll-icon"></i>
     </a>
 
     <!-- =================== JS ======================= -->
+    <script>
+      const key = "QjzhAhgQ2JmiHF9cden6";
+      const map = L.map("map").setView([19.52719, 105.79744], 8); //starting position
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "",
+      }).addTo(map);
+
+      L.marker([19.52719, 105.79744])
+        .addTo(map)
+        .bindPopup("Nhà thi đấu đa năng<br> Phường Tân Dân")
+        .openPopup();
+    </script>
     <script src="./JS/main.js"></script>
-</body>
+  </body>
 </html>
