@@ -388,7 +388,7 @@ img {
 
 .img {
   height: 100% !important;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 5px;
 }
 
