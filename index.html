@@ -143,7 +143,7 @@
           <!-- <span class="">Name: Minh Quang</span> -->
           <div class="card-info">
             <div class="card-name">Name: Phạm Quang</div>
-            <div class="card-name">Profession: Doctor</div>
+            <div class="card-name">Profession: Groom</div>
           </div>
         </div>
 
@@ -152,83 +152,117 @@
           <!-- <span class="">Name: Minh Quang</span> -->
           <div class="card-info">
             <div class="card-name">Name: Lê Thúy</div>
-            <div class="card-name">Profession: Banker</div>
+            <div class="card-name">Profession: Pride</div>
           </div>
         </div>
       </section>
       <section class="section" id="outstory">
         <h2 class="section__title">Out Story</h2>
         <span class="section__subtitle">Roadmap for love</span>
-      </section>
-      <div class="slider_content">
-        <div class="card">
-          <input type="radio" name="select" id="slide_1" checked />
-          <input type="radio" name="select" id="slide_2" />
-          <input type="radio" name="select" id="slide_3" />
-          <input type="radio" name="select" id="slide_4" />
-          <input type="checkbox" id="slideImg" />
-
-          <div class="slider">
-            <label for="slide_1" class="slide slide_1"></label>
-            <label for="slide_2" class="slide slide_2"></label>
-            <label for="slide_3" class="slide slide_3"></label>
-            <label for="slide_4" class="slide slide_4"></label>
-          </div>
-          <!-- img1 -->
-          <div class="inner_part">
-            <label for="slideImg" class="img">
-              <img class="img_1" src="./images/slide2.jpg" />
-              <div class="content content_1">
-                <div class="title">May 2021</div>
-                <div class="text">
-                  Biết đến nhau một cách tình cờ, nhưng tình cờ hơn khi có em
-                  trai Phạm Vũ Đăng Minh đã ông tơ bà nguyệt cho anh chị hihi.
-                </div>
+        <div class="layout-content">
+          <div class="item-layout">
+            <img src="./images/slide2.jpg" alt="" class="img-item" />
+            <div class="content-item">
+              <div class="title">May 2021</div>
+              <div class="text">
+                Biết đến nhau một cách tình cờ, nhưng tình cờ hơn khi có em trai
+                Phạm Vũ Đăng Minh đã ông tơ bà nguyệt cho anh chị hihi.
               </div>
-            </label>
-          </div>
-          <!-- img2 -->
-          <div class="inner_part">
-            <label for="slideImg" class="img">
-              <img class="img_2" src="./images/kiss.jpg" />
-              <div class="content content_2">
-                <div class="title">First Date</div>
-                <div class="text">
-                  Lần đầu hẹn hò là không hẹn hò, chúng tôi bỏ lỡ nó, do covid,
-                  do vướng bận công việc của 2 đứa, những mọi thứ vẫn tiếp diễn.
-                  Rồi sau này với chúng tôi lần nào gặp nhau cũng là lần đầu.
-                </div>
+              <div class="icon">
+                <img
+                  src="./images/heart-red.svg"
+                  alt=""
+                  class="icon-react-heart-red"
+                  onclick="changeIcon1()"
+                  id="icon-heart-1"
+                />
+                <img
+                  src="./images/laughing-emoji.svg"
+                  alt=""
+                  class="icon-react-haha"
+                   onclick="changeIcon()"
+                />
               </div>
-            </label>
+            </div>
           </div>
-          <!-- img3 -->
-          <div class="inner_part">
-            <label for="slideImg" class="img">
-              <img class="img_3" src="./images/slide4.jpg" />
-              <div class="content content_3">
-                <div class="title">Rain Bow</div>
-                <div class="text">
-                  Có những ngày nắng rồi có những ngày mưa,tưởng chừng hai đứa
-                  phải nghe tiếng lặng thinh, nhưng có lẽ cuộc đời đang khẽ thở,
-                  rồi sau tất cả những cuồng điên rực rỡ ấy, ta về nhà khép cửa
-                  chờ nhau.
-                </div>
+          <div class="item-layout">
+            <img src="./images/kiss.jpg" alt="" class="img-item" />
+            <div class="content-item">
+              <div class="title">First Date</div>
+              <div class="text">
+                Lần đầu hẹn hò là không hẹn hò, chúng tôi bỏ lỡ nó, do covid, do
+                vướng bận công việc của 2 đứa, những mọi thứ vẫn tiếp diễn. Rồi
+                sau này với chúng tôi lần nào gặp nhau cũng là lần đầu.
               </div>
-            </label>
+              <div class="icon" id="el-2">
+                <img
+                  src="./images/heart-red.svg"
+                  alt=""
+                  class="icon-react-heart-red"
+                  onclick="changeIcon2()"
+                  id="icon-heart-2"
+                />
+                <img
+                  src="./images/laughing-emoji.svg"
+                  alt=""
+                  class="icon-react-haha"
+                   onclick="changeIcon()"
+                />
+              </div>
+            </div>
           </div>
-          <!-- img4 -->
-          <div class="inner_part">
-            <label for="slideImg" class="img">
-              <img class="img_4" src="./images/banner4.jpg" />
-              <div class="content content_4">
-                <div class="title">18 December 2022</div>
-                <div class="text">
-                  Sau cùng hai đứa quyết định sau này gió tuyết cùng nhau, bình
-                  đạm hay thanh bần cùng nhau, vinh hoa cùng nhau, dịu dàng ấm
-                  áp cũng cùng nhau, và vẫn luôn hướng cùng hướng.
-                </div>
+          <div class="item-layout">
+            <img src="./images/slide4.jpg" alt="" class="img-item" />
+            <div class="content-item">
+              <div class="title">Rain Bow</div>
+              <div class="text">
+                Có những ngày nắng rồi có những ngày mưa,tưởng chừng hai đứa
+                phải nghe tiếng lặng thinh, nhưng có lẽ cuộc đời đang khẽ thở,
+                rồi sau tất cả những cuồng điên rực rỡ ấy, ta về nhà khép cửa
+                chờ nhau.
               </div>
-            </label>
+              <div class="icon">
+                <img
+                  src="./images/heart-red.svg"
+                  alt=""
+                  class="icon-react-heart-red"
+                  onclick="changeIcon3()"
+                  id="icon-heart-3"
+                />
+                <img
+                  src="./images/laughing-emoji.svg"
+                  alt=""
+                  class="icon-react-haha"
+                   onclick="changeIcon()"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="item-layout">
+            <img src="./images/banner4.jpg" alt="" class="img-item" />
+            <div class="content-item">
+              <div class="title">18 December 2022</div>
+              <div class="text">
+                Sau cùng hai đứa quyết định sau này gió tuyết cùng nhau, bình
+                đạm hay thanh bần cùng nhau, vinh hoa cùng nhau, dịu dàng ấm áp
+                cũng cùng nhau, và vẫn luôn hướng cùng hướng.
+              </div>
+              <div class="icon">
+                <img
+                  src="./images/heart-red.svg"
+                  alt=""
+                  class="icon-react-heart-red"
+                  onclick="changeIcon4()"
+                  id="icon-heart-4"
+                />
+                <img
+                  src="./images/laughing-emoji.svg"
+                  alt=""
+                  class="icon-react-haha"
+                  onclick="changeIcon()"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -363,6 +397,20 @@
               class="layout-image-2 animation_img"
             />
           </div>
+          <div>
+            <img
+              src="./images/item13.jpg"
+              alt=""
+              class="layout-image-2 animation_img"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/item14.jpg"
+              alt=""
+              class="layout-image-2 animation_img"
+            />
+          </div>
         </div>
       </div>
       <div class="section map" id="contact">
@@ -371,21 +419,59 @@
         <div class="img-contact">
           <img src="./images/banner6.jpg" alt="" class="contact-image" />
         </div>
-        <div class="title_address">Nhà Văn Hóa Đa Năng Phường Tân Dân</div>
-        <div class="title_mail">Datptit16@gmail.com</div>
+        <div class="title_address">Nhà Văn Hóa Đa Năng </div>
+        <div class="title_mail">Phường Tân Dân, Thị xã Nghi Sơn, Tỉnh Thanh Hóa</div>
+        <div class="title_mail">Thuylt070621@gmail.com</div>
         <div>
           <a href="tel:0988597838" class="text-phone"> 0988597838 </a>
         </div>
         <button class="btn-address">Địa điểm</button>
       </div>
-      <div class="section">
+      <div >
         <div class="position-map">
-          <div id="map"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3760.3408608001328!2d105.79526215048756!3d19.52697434265135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2ssg!4v1670473003671!5m2!1svi!2ssg"  height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="layout-map"></iframe>
         </div>
       </div>
     </main>
 
     <!--==================== FOOTER ====================-->
+
+      <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Quang&Thuy</h1>
+                    <span class="footer__subtitle">Special Day</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="" class="footer__link">About us</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Timeline</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/Meo1297" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/xuyy.meoo?igshid=Nzg3NjI1NGI=" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://t.me/datpt21" target="_blank" class="footer__social">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Tien Dat. All right reserved</p>
+        </div>
+    </footer>
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -393,18 +479,6 @@
     </a>
 
     <!-- =================== JS ======================= -->
-    <script>
-      const key = "QjzhAhgQ2JmiHF9cden6";
-      const map = L.map("map").setView([19.52719, 105.79744], 8); //starting position
-      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "",
-      }).addTo(map);
-
-      L.marker([19.52719, 105.79744])
-        .addTo(map)
-        .bindPopup("Nhà thi đấu đa năng<br> Phường Tân Dân")
-        .openPopup();
-    </script>
     <script src="./JS/main.js"></script>
   </body>
 </html>

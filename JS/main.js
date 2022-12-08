@@ -158,7 +158,7 @@ var x = setInterval(function () {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerHTML = days;
+  document.getElementById("days").innerHTML = days > 9 ? days : "0" + days;
   document.getElementById("hours").innerHTML = hours > 9 ? hours : "0" + hours;
   document.getElementById("minutes").innerHTML =
     minutes > 9 ? minutes : "0" + minutes;
@@ -207,3 +207,29 @@ function revealImg() {
 }
 
 window.addEventListener("scroll", revealImg);
+function changeIcon1() {
+  var icon = document.querySelector(".icon-react-heart-red");
+  icon.classList.toggle("icon-heart-scale");
+}
+
+function changeIcon2() {
+  var icon = document.querySelector(".icon-react-heart-red");
+  icon.classList.toggle("icon-heart-scale");
+}
+
+function changeIcon3() {
+  var icon = document.querySelector(".icon-react-heart-red");
+  icon.classList.toggle("icon-heart-scale");
+}
+
+function changeIcon4() {
+  var icon = document.querySelector(".icon-react-heart-red");
+  icon.classList.toggle("icon-heart-scale");
+}
+
+function changeIcon() {
+  var icon = document.querySelector(".icon-react-haha");
+  for (let i = 0; i < icon.length; i++) {
+    icon[i].classList.toggle("icon-heart-scale");
+  }
+}
