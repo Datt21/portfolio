@@ -392,12 +392,22 @@ img {
   transform: translate(-50%, -50%) !important;
   font-family: Swear;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .banner-info {
   position: absolute;
   top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  font-family: Swear;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.banner-date {
+  position: absolute;
+  top: 68%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   font-family: Swear;
@@ -1793,7 +1803,14 @@ input {
 
 .move-subtitle {
   margin-bottom: 10px !important;
-  font-size: 16px;
+  font-size: 20px;
+  color: #10093b;
+  font-weight: 600;
+}
+
+.info-danger {
+  color: #939396;
+  font-size: 11px;
 }
 
 /*==================== FOOTER ====================*/
