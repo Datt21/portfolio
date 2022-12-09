@@ -677,7 +677,7 @@ svg {
   width: 100%;
   margin-top: 20px;
   background: #fff;
-  height: 30px;
+  height: 36px;
   border-radius: 5px;
   border: 1px solid #10093b;
   font-size: 16px;
@@ -692,7 +692,7 @@ svg {
 
 .btn-gift {
   position: absolute;
-  height: 30px;
+  height: 36px;
 }
 
 .layout-map {
