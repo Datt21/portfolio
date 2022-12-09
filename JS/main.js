@@ -233,3 +233,12 @@ function changeIcon() {
     icon[i].classList.toggle("icon-heart-scale");
   }
 }
+
+function displayBank() {
+  const bank = document.getElementById("bank");
+  if (bank.style.display == "none") {
+    bank.style.display = "block";
+  } else {
+    bank.style.display = "none";
+  }
+}
